@@ -27,7 +27,6 @@
       overflow-x: hidden;
     }
 
-    /* ── Stars background ── */
     body::before {
       content: '';
       position: fixed;
@@ -48,7 +47,6 @@
 
     section, header, footer, nav { position: relative; z-index: 1; }
 
-    /* ── NAV ── */
     nav {
       display: flex;
       justify-content: space-between;
@@ -86,7 +84,6 @@
 
     .nav-links a:hover { color: var(--gold); }
 
-    /* ── HERO ── */
     header {
       min-height: 100vh;
       display: flex;
@@ -105,7 +102,6 @@
       border-radius: 20px;
       padding: 4px 16px;
       margin-bottom: 28px;
-      text-transform: uppercase;
     }
 
     .hero-title {
@@ -117,7 +113,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-shadow: none;
       filter: drop-shadow(0 0 24px rgba(245,197,24,.5));
       margin-bottom: 16px;
     }
@@ -140,10 +135,7 @@
       margin-bottom: 56px;
     }
 
-    .hero-desc strong {
-      color: var(--gold-light);
-      font-weight: 700;
-    }
+    .hero-desc strong { color: var(--gold-light); font-weight: 700; }
 
     .btn-primary {
       display: inline-block;
@@ -164,15 +156,9 @@
       box-shadow: 0 12px 40px rgba(245,197,24,.6);
     }
 
-    /* ── SECTION BASE ── */
-    .section {
-      padding: 100px 20px;
-    }
+    .section { padding: 100px 20px; }
 
-    .section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
 
     .section-label {
       font-size: .75rem;
@@ -197,7 +183,6 @@
       margin-bottom: 48px;
     }
 
-    /* ── PHILOSOPHY ── */
     #philosophy {
       background: linear-gradient(180deg, transparent 0%, rgba(90,45,156,.12) 50%, transparent 100%);
     }
@@ -224,12 +209,7 @@
 
     .philosophy-body p + p { margin-top: 16px; }
 
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 32px;
-    }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
 
     .tag {
       background: rgba(245,197,24,.15);
@@ -242,7 +222,6 @@
       letter-spacing: .06em;
     }
 
-    /* ── MEMBERS ── */
     #members { background: transparent; }
 
     .members-grid {
@@ -265,10 +244,7 @@
       box-shadow: 0 16px 48px rgba(90,45,156,.3);
     }
 
-    .member-icon {
-      font-size: 3rem;
-      margin-bottom: 16px;
-    }
+    .member-icon { font-size: 3rem; margin-bottom: 16px; }
 
     .member-name {
       font-size: 1.3rem;
@@ -283,16 +259,11 @@
       color: rgba(232,224,245,.75);
     }
 
-    /* ── SCHEDULE ── */
     #schedule {
       background: linear-gradient(180deg, transparent 0%, rgba(45,27,105,.2) 50%, transparent 100%);
     }
 
-    .schedule-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+    .schedule-list { display: flex; flex-direction: column; gap: 20px; }
 
     .schedule-item {
       display: flex;
@@ -319,7 +290,6 @@
       color: var(--text-light);
     }
 
-    /* ── EVENTS ── */
     #events { background: transparent; }
 
     .events-grid {
@@ -344,24 +314,15 @@
 
     .event-icon { font-size: 2.4rem; margin-bottom: 14px; }
 
-    .event-name {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--white);
-    }
+    .event-name { font-size: 1.1rem; font-weight: 700; color: var(--white); }
 
-    /* ── DISCORD ── */
     #discord {
       background: linear-gradient(135deg, rgba(88,101,242,.15) 0%, rgba(90,45,156,.2) 100%);
       border-top: 1px solid rgba(88,101,242,.3);
       border-bottom: 1px solid rgba(88,101,242,.3);
     }
 
-    .discord-inner {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-    }
+    .discord-inner { max-width: 700px; margin: 0 auto; text-align: center; }
 
     .discord-icon { font-size: 4rem; margin-bottom: 20px; }
 
@@ -383,13 +344,9 @@
       border-radius: 20px;
     }
 
-    /* ── JOIN ── */
     #join { text-align: center; }
 
-    .join-inner {
-      max-width: 600px;
-      margin: 0 auto;
-    }
+    .join-inner { max-width: 600px; margin: 0 auto; }
 
     .join-inner .section-title { margin-bottom: 20px; }
 
@@ -400,7 +357,6 @@
       margin-bottom: 40px;
     }
 
-    /* ── FOOTER ── */
     footer {
       border-top: 1px solid rgba(255,255,255,.08);
       padding: 40px 20px;
@@ -409,14 +365,11 @@
       font-size: .85rem;
     }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
       nav { padding: 14px 20px; }
       .nav-links { gap: 16px; }
       .nav-links a { font-size: .8rem; }
-
       .philosophy-grid { grid-template-columns: 1fr; gap: 28px; }
-
       .section { padding: 70px 16px; }
     }
   </style>
@@ -425,7 +378,6 @@
 
 <canvas id="stars-canvas"></canvas>
 
-<!-- ── NAV ── -->
 <nav>
   <div class="nav-logo">★ 星ノ空</div>
   <ul class="nav-links">
@@ -437,7 +389,6 @@
   </ul>
 </nav>
 
-<!-- ── HERO ── -->
 <header>
   <div class="hero-badge">信長の野望 真戦 ／ S102〜107サーバー</div>
   <h1 class="hero-title"><span class="hero-star">★</span> 星ノ空</h1>
@@ -452,7 +403,6 @@
   <a href="#join" class="btn-primary">参加申請する</a>
 </header>
 
-<!-- ── PHILOSOPHY ── -->
 <section id="philosophy" class="section">
   <div class="section-inner">
     <div class="philosophy-grid">
@@ -480,37 +430,31 @@
   </div>
 </section>
 
-<!-- ── MEMBERS ── -->
 <section id="members" class="section">
   <div class="section-inner">
     <p class="section-label">Groups</p>
     <h2 class="section-title">グループの紹介</h2>
     <div class="section-divider"></div>
     <div class="members-grid">
-
       <div class="member-card">
         <div class="member-icon">🐼</div>
         <div class="member-name">はなれパンダ</div>
         <p class="member-desc">わいわいしてます！とにかくおしゃべり、士気も高い！学生から80代まで幅広く楽しくやってます。今日もはたらきしていくぞーー！</p>
       </div>
-
       <div class="member-card">
         <div class="member-icon">🧅</div>
         <div class="member-name">たまねぎ</div>
         <p class="member-desc">遥かオリオンの星より生まれし一星。その名はオニオン。地上では「たまねぎ」と呼ばれる。激重にも重なる彼は、仲間この絆の証。今日も星ノ空に、たまねぎの涙を降らせよう。</p>
       </div>
-
       <div class="member-card">
         <div class="member-icon">🐻</div>
         <div class="member-name">こくま</div>
         <p class="member-desc">活発で仲の良い「こくま組」。やるときはみんなで力を合わせ最後までやり遂げます。楽しさと達成感をわかちあうチームです。目指せおおくま！</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── SCHEDULE ── -->
 <section id="schedule" class="section">
   <div class="section-inner">
     <p class="section-label">Daily Schedule</p>
@@ -533,34 +477,20 @@
   </div>
 </section>
 
-<!-- ── EVENTS ── -->
 <section id="events" class="section">
   <div class="section-inner">
     <p class="section-label">Events</p>
     <h2 class="section-title">実はイベントも盛りだくさん</h2>
     <div class="section-divider"></div>
     <div class="events-grid">
-      <div class="event-card">
-        <div class="event-icon">💡</div>
-        <div class="event-name">クイズ大会</div>
-      </div>
-      <div class="event-card">
-        <div class="event-icon">🐺</div>
-        <div class="event-name">人狼ゲーム</div>
-      </div>
-      <div class="event-card">
-        <div class="event-icon">⚔️</div>
-        <div class="event-name">グループ対抗戦</div>
-      </div>
-      <div class="event-card">
-        <div class="event-icon">🎉</div>
-        <div class="event-name">その他いろいろ</div>
-      </div>
+      <div class="event-card"><div class="event-icon">💡</div><div class="event-name">クイズ大会</div></div>
+      <div class="event-card"><div class="event-icon">🐺</div><div class="event-name">人狼ゲーム</div></div>
+      <div class="event-card"><div class="event-icon">⚔️</div><div class="event-name">グループ対抗戦</div></div>
+      <div class="event-card"><div class="event-icon">🎉</div><div class="event-name">その他いろいろ</div></div>
     </div>
   </div>
 </section>
 
-<!-- ── DISCORD ── -->
 <section id="discord" class="section">
   <div class="discord-inner">
     <p class="section-label">Community</p>
@@ -579,69 +509,44 @@
   </div>
 </section>
 
-<!-- ── JOIN ── -->
 <section id="join" class="section">
   <div class="join-inner">
     <p class="section-label">Join Us</p>
     <h2 class="section-title">一緒に星座を描こう</h2>
     <div class="section-divider" style="margin:0 auto 48px;"></div>
     <p>参加申請はフォームからできます。申請してくれたら <strong style="color:var(--gold-light)">2〜3日以内</strong> に連絡します！<br />みんなで遊びに来てくださいね！</p>
-    <a
-      href="https://forms.gle/nkCnVuB4wRo7WpS3A"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn-primary"
-    >参加申請フォームへ ★</a>
+    <a href="https://forms.gle/nkCnVuB4wRo7WpS3A" target="_blank" rel="noopener noreferrer" class="btn-primary">参加申請フォームへ ★</a>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
 <footer>
   <p>★ 星ノ空 ／ 信長の野望 真戦 S102〜S107</p>
   <p style="margin-top:8px;">輝け、数多の星たち</p>
 </footer>
 
-<!-- ── STAR CANVAS SCRIPT ── -->
 <script>
   (function () {
     const canvas = document.getElementById('stars-canvas');
     const ctx = canvas.getContext('2d');
     let stars = [];
     let W, H;
-
-    function resize() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-    }
-
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
     function createStars(n) {
       stars = [];
       for (let i = 0; i < n; i++) {
-        stars.push({
-          x: Math.random() * W,
-          y: Math.random() * H,
-          r: Math.random() * 1.4 + 0.2,
-          alpha: Math.random(),
-          speed: Math.random() * 0.004 + 0.001,
-          phase: Math.random() * Math.PI * 2,
-        });
+        stars.push({ x: Math.random()*W, y: Math.random()*H, r: Math.random()*1.4+0.2, alpha: Math.random(), speed: Math.random()*0.004+0.001, phase: Math.random()*Math.PI*2 });
       }
     }
-
     function draw(t) {
       ctx.clearRect(0, 0, W, H);
       for (const s of stars) {
-        const a = 0.3 + 0.7 * (0.5 + 0.5 * Math.sin(s.phase + t * s.speed * 60));
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255,255,220,${a})`;
-        ctx.fill();
+        const a = 0.3 + 0.7*(0.5+0.5*Math.sin(s.phase+t*s.speed*60));
+        ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+        ctx.fillStyle = `rgba(255,255,220,${a})`; ctx.fill();
       }
       requestAnimationFrame(draw);
     }
-
-    resize();
-    createStars(220);
+    resize(); createStars(220);
     window.addEventListener('resize', () => { resize(); createStars(220); });
     requestAnimationFrame(draw);
   })();
